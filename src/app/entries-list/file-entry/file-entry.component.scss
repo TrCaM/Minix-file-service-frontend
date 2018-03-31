@@ -10,7 +10,10 @@
 .btn1 {
     height:80px;
     width:300px;
-    background-color: dimgrey
+}
+
+.directory {
+    background-color: #FFE763;
 }
 .btn1 img {
     height:55px;
@@ -20,11 +23,13 @@
     font-size: 130%;
 }
 .row1 {
-    font-size: 100%
+    font-size: 100%;
+    text-align: left;
 }
 .folder1 {
     width:100%;
 }
 .col {
-    font-size: 60%; 
+    font-size: 50%; 
 }
+

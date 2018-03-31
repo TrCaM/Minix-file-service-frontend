@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand bg-gradient-dark">
+<nav class="navbar navbar-expand">
     <div class="navbar-brand">
         <i href="#" class="fa fa-building fa-2x"></i>
     </div>
@@ -8,17 +8,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
-            <div class="nav-item active">
-                <a class="icon fa-angle-right nav-link" href="#">root</a>
-            </div>
             <div class="nav-item">
-                <a class="icon fa-angle-right nav-link" href="#">src</a>
+                    <a class="icon fa-angle-right nav-link" (click)="onClick(-1)">root</a>
             </div>
-            <div class="nav-item">
-                <a class="icon fa-angle-right nav-link" href="#">usr</a>
-            </div>
-            <div class="nav-item">
-                <a class="icon fa-angle-right nav-link" href="#">Minix</a>
+            <div class="nav-item" *ngFor="let path of pathList; index as i">
+                <a class="icon fa-angle-right nav-link" (click)="onClick(i)">{{ path }}</a>
             </div>
         </div>
     </div>
